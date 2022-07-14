@@ -1,0 +1,23 @@
+header{
+    background-color: rgb(17, 102, 21);
+    padding: 20px;
+}
+.barra{
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        li{
+            margin-left: 16px;
+            a{
+                text-decoration: none;
+                padding: 10px;
+                color: aliceblue;
+                &:hover {
+                    color: rgb(240, 233, 176);
+                }
+            }
+        }
+    }
+}
