@@ -3,10 +3,15 @@
     margin: 0px;
 }
 
+@import "./base/variables";
+@import "./base/extends";
+@import "./base/mixins";
+@import "./components/button";
 @import "header";
 @import "teXto";
 @import "main";
 @import "contacto";
+
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100&display=swap');
 
 body{
@@ -23,7 +28,7 @@ body{
 }
 
 section{
-    background-color: rgba(38, 102, 25, 0.733);
+    background-color: rgba(38, 102, 25, 0.815);
 }
 
 footer{
@@ -62,7 +67,7 @@ footer{
     grid-template-rows: 1fr;
 
     .imaGen{
-    border: 2px solid rgb(255, 231, 16);
+    border: 2px solid (map-get($colores, "mediaImgSec1"));
     width: 91vw;
     }
     .imgProductos{
@@ -83,7 +88,7 @@ footer{
         text-align: center;
         font-style: italic;
         padding: 10px;
-        border: 2px solid rgb(255, 231, 16);
+        border: 2px solid (map-get($colores, "mediaImgSec1"));
         border-radius: 33px;
         background-color: rgb(132, 141, 1);
     }

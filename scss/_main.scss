@@ -22,7 +22,7 @@
 
     figcaption {
         font-size: large;
-        color: aliceblue;
+        @include aliceblue;
         padding: 0px 20px;
     }
 }
@@ -30,6 +30,6 @@
 .claseParaSubTitulos{
     
     letter-spacing: 4px;
-    color: aliceblue;
+    @include aliceblue;
     padding: 40px 10px 20px 10px;
 }
