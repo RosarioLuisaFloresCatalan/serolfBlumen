@@ -131,6 +131,12 @@ body .contenedor {
   grid-template-rows: 1fr;
   width: 100%;
 }
+body .conteVid {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 section {
   background-color: rgba(38, 102, 25, 0.815);
@@ -163,6 +169,9 @@ footer img {
   .medio .imgProductos:hover {
     transform: translateX(55px) scale(2);
   }
+  iframe {
+    width: 60vw;
+  }
 }
 @media (max-width: 480px) {
   .medio {
@@ -179,6 +188,13 @@ footer img {
   }
   .medio .imgProductos:hover {
     transform: translateX(150px) scale(2);
+  }
+  .conteContacto .contActo {
+    width: 80vw;
+  }
+  iframe {
+    width: 70vw;
+    height: 38vh;
   }
   header, footer {
     background-color: rgb(37, 104, 41);
